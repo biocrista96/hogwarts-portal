@@ -1,0 +1,39 @@
+.professors-wrapper {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url('../../../assets/backgrounds/professors.jpeg');
+  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .header {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    opacity: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+
+  .table-wrapper {
+    width: 90%;
+    opacity: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

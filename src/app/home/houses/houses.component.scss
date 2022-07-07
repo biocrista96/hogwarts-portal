@@ -1,0 +1,90 @@
+.houses-wrapper {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url('../../../assets/backgrounds/houses.jpeg');
+  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    opacity: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+    &.activeTable {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 90%;
+      justify-content: space-between;
+      animation: myAnim2 2s ease 0s 1 normal forwards;
+
+      .logo {
+
+
+        img {
+          width: 150px;
+        }
+      }
+
+
+    }
+
+    .logo {
+      margin-bottom: 25px;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .select-wrapper {
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .select {
+        color: white;
+      }
+    }
+  }
+
+  .table-wrapper {
+    width: 90%;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+  }
+
+}
+
+
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

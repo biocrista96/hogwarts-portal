@@ -1,0 +1,26 @@
+<div class="houses-wrapper"
+  [style.background]="'url(../../../assets/backgrounds/' + (houseSelected ? houseSelected : 'houses' ) + '.jpeg)'">
+  <div class="header" [ngClass]="{'activeTable':charactersData?.length != 0}">
+    <div class="logo">
+      <img *ngIf="!houseSelected" src="../../../assets/png/houses.png" />
+      <img *ngIf="houseSelected" src="{{'../../../assets/svg/'+ houseSelected+'.svg'}}">
+    </div>
+    <div class="select-wrapper">
+      <h2>Select a house</h2>
+      <mat-form-field appearance="fill" class="select">
+        <mat-label>Houses</mat-label>
+        <mat-select (selectionChange)="selectedValue($event.value)" name="house">
+          <mat-option *ngFor="let house of houses" [value]="house.value">
+            {{house.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+
+  <div *ngIf="charactersData?.length" class="table-wrapper">
+    <custom-table [charactersData]="charactersData"></custom-table>
+  </div>
+
+</div>

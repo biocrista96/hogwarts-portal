@@ -1,0 +1,33 @@
+.welcome-wrapper {
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('../../../assets/backgrounds/home.jpeg');
+  background-size: 100%;
+  background-size: cover;
+
+  .welcome {
+    font-size: 80px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+
+  .tiny {
+    margin-top: 25px;
+    font-size: 40px;
+    opacity: 0;
+    animation: myAnim 2s ease 0.5s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

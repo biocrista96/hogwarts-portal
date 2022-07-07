@@ -1,0 +1,23 @@
+.custom-table {
+  width: 100%;
+
+  .filter {
+    width: 100%;
+    color: white;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow: auto;
+
+    .table {
+      width: 100%;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+
+}

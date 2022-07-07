@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Mason";
+  src: local("Mason"), url(./app/shared/fonts/MasonSansRegular_Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sofia";
+  src: local("Sofia"), url(./app/shared/fonts/sofiapro-light.otf) format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Mason",
+    serif;
+}
+
+.mat-typography,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Mason", serif !important;
+}
+
+
+.mat-typography,
+.mat-form-field,
+.mat-select,
+.mat-option,
+.placeholder {
+  font: 400 14px/20px "Mason", serif !important;
+}
+
+.mat-form-field-type-mat-select .mat-form-field-label,
+.mat-select-arrow,
+.mat-select-value,
+.mat-focused,
+.mat-form-field-label,
+.mat-form-field-appearance-standard .mat-form-field-underline {
+  color: white !important;
+}
+
+.mat-option.mat-active,
+.mat-option:hover:not(.mat-option-disabled),
+.mat-option:focus:not(.mat-option-disabled),
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+  color: white;
+  background-color: #24152F;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before,
+.mat-form-field-ripple,
+.mat-form-field.mat-focused .mat-form-field-ripple,
+.mat-form-field-appearance-standard .mat-form-field-underline,
+.mat-focused .placeholder {
+  background-color: white;
+}
+
+.mat-drawer-side {
+  border-right: solid 1px #24152F;
+}
+
+.mat-input-element {
+  caret-color: white;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgb(0 0 0 / 0%);
+}
+
+th.mat-header-cell:first-of-type,
+th.mat-header-cell {
+  font-family: "Sofia", serif !important;
+  color: rgba(9, 9, 9, 0.477);
+  font-size: 15px;
+}
+
+td.mat-cell {
+  font-family: "Sofia", serif !important;
+  color: black;
+  font-size: 13px;
+}
